@@ -1,4 +1,8 @@
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import maths from "../assets/Illustrations/Maths.png";
+import science from "../assets/Illustrations/Science.png";
+import physics from "../assets/Illustrations/Physics.png";
+import chemistry from "../assets/Illustrations/Chemistry.png";
 
 export const NavLinks = [
   {
@@ -101,16 +105,14 @@ export const Questions = [
   },
   {
     id: 3,
-    question:
-      " How do I search for job opportunities?",
+    question: " How do I search for job opportunities?",
     answer:
       "On the Career site homepage, click the current openings option. Select your search criteria and you will be presented with opportunities that match your criteria as you click on view jobs on the career opportunities search page. To view each position’s description, click on the position’s title in the search results. Note: If nothing is returned when you perform a search, it indicates that no current vacancies exist in your preferred geographic location and/or within your selected job area.",
     isOpen: false,
   },
   {
     id: 4,
-    question:
-      "What will happen after I complete the online application?",
+    question: "What will happen after I complete the online application?",
     answer:
       "You will receive an automatic message from the system confirming the successful receipt of your application. Once submitted, your resume enters our candidate tracking system. Upon scrutiny of your filled in application and being identified as potential applicant for the job role, you will be contacted via telephone/e-mail to take part in the next phase of the recruitment process. You will participate in competency based job interview(s) and the number of interview(s) may vary by role.",
     isOpen: false,
@@ -124,7 +126,8 @@ export const Questions = [
   },
   {
     id: 6,
-    question: "Will I be considered for other positions when applying for a specific position?",
+    question:
+      "Will I be considered for other positions when applying for a specific position?",
     answer:
       "Yes – your candidate profile will be stored in our database and will be available to our Staffing team to be considered for alternate job opportunities.",
     isOpen: false,
@@ -145,7 +148,8 @@ export const Questions = [
   },
   {
     id: 9,
-    question: "Does Drona Learning Academy hire only experienced people or freshers also?",
+    question:
+      "Does Drona Learning Academy hire only experienced people or freshers also?",
     answer:
       "It is vital for our continued success that we bring in teaching faculty who are experienced in Academic, Vocational, Competitive Exam preparation and career enhancement courses. Some of our courses required seasoned and experienced teaching professional who can start quickly and enhance the brand of Drona. There would be opportunity for freshers in specific domains who completes the spectrum of employment from both ends.",
     isOpen: false,
@@ -159,15 +163,105 @@ export const Questions = [
   },
   {
     id: 11,
-    question: "I would like to speak to someone about opportunities at Drona Learning Academy?",
+    question:
+      "I would like to speak to someone about opportunities at Drona Learning Academy?",
     answer:
       "We hope you will find all the information you need about all the job opportunity on this website. We also encourage you to write to us helpus@dronalearning.com for all job inquiries.",
     isOpen: false,
   },
 ];
 
+export const TeacherData = [
+  {
+    id: 1,
+    role: "Maths Teacher(Grade 6 -12)",
+    image: maths,
+    responsibilities: [
+      "Planning and delivering effective lessons that meet the curriculum(CBSE, ICSE, IGSCE ETC.) and are suitable for all pupils in grade 6 to 12.",
+      "Ensuring all your lessons, units, and projects are clearly understood by your pupils.",
+      "Staying current with any changes and developments to the national teaching curriculum.",
+      "Working with your colleagues to coordinate lesson plans where other subjects can complement your Mathematics lessons.",
+      "Being able to adapt your instructional materials and teaching methods to meet the classes varying learning abilities.",
+      "Creating lesson plans that deliver a balance of instruction, demonstration, and work time, so that pupils are provided with the opportunity to observe, question, and investigate.",
+      "Being creative and enthusiastic about using different teaching methods, including solo work, group work, whole-class work, demonstrations.",
+      "Attending meetings, parent's evenings.",
+      "Creating a classroom environment where pupils work together to achieve their learning goals.",
+      "Helping and supporting individual pupils as required and encouraging them to research topics themselves.",
+      "Keeping a register of pupils' attendance, set assignments and homework, mark pupils work, record completion, write progress reports and carry out continuous assessment.",
+      "Taking responsibility for the individual's progress and development, feeding this information back to us.",
+      "Meeting with parents, guardians or careers to discuss their child/children's progress in the subject and determine learning priorities and any needed resources.",
+      "Must have a Post Graduation level education in the relevant subjects. ",
+      "Teaching experience of 1-2 years is a plus for this role.",
+    ],
+  },
+  {
+    id: 2,
+    role: "Science Teacher(Grade 6-10)",
+    image: science,
+    responsibilities: [
+      "Planning and delivering effective lessons that meet the curriculum(CBSE, ICSE, IGSCE ETC.) and are suitable for all pupils in grade 6 to 12.",
+      "Ensuring all your lessons, units, and projects are clearly understood by your pupils.",
+      "Staying current with any changes and developments to the national teaching curriculum.",
+      "Working with your colleagues to coordinate lesson plans where other subjects can complement your Mathematics lessons.",
+      "Being able to adapt your instructional materials and teaching methods to meet the classes varying learning abilities.",
+      "Creating lesson plans that deliver a balance of instruction, demonstration, and work time, so that pupils are provided with the opportunity to observe, question, and investigate.",
+      "Being creative and enthusiastic about using different teaching methods, including solo work, group work, whole-class work, demonstrations.",
+      "Attending meetings, parent&apos;s evenings.",
+      "Creating a classroom environment where pupils work together to achieve their learning goals.",
+      "Helping and supporting individual pupils as required and encouraging them to research topics themselves.",
+      "Keeping a register of pupils&apos; attendance, set assignments and homework, mark pupils work, record completion, write progress reports and carry out continuous assessment.",
+      "Taking responsibility for the individual&apos;s progress and development, feeding this information back to us.",
+      "Meeting with parents, guardians or careers to discuss their child/children&apos;s progress in the subject and determine learning priorities and any needed resources.",
+      "Must have a Post Graduation level education in the relevant subjects. ",
+      "Teaching experience of 1-2 years is a plus for this role.",
+    ],
+  },
+  {
+    id: 3,
+    role: "Physics Teacher(Grade 6-12)",
+    image: physics,
+    responsibilities: [
+      "Planning and delivering effective lessons that meet the curriculum(CBSE, ICSE, IGSCE ETC.) and are suitable for all pupils in grade 6 to 12.",
+      "Ensuring all your lessons, units, and projects are clearly understood by your pupils.",
+      "Staying current with any changes and developments to the national teaching curriculum.",
+      "Working with your colleagues to coordinate lesson plans where other subjects can complement your Mathematics lessons.",
+      "Being able to adapt your instructional materials and teaching methods to meet the classes varying learning abilities.",
+      "Creating lesson plans that deliver a balance of instruction, demonstration, and work time, so that pupils are provided with the opportunity to observe, question, and investigate.",
+      "Being creative and enthusiastic about using different teaching methods, including solo work, group work, whole-class work, demonstrations.",
+      "Attending meetings, parent&apos;s evenings.",
+      "Creating a classroom environment where pupils work together to achieve their learning goals.",
+      "Helping and supporting individual pupils as required and encouraging them to research topics themselves.",
+      "Keeping a register of pupils&apos; attendance, set assignments and homework, mark pupils work, record completion, write progress reports and carry out continuous assessment.",
+      "Taking responsibility for the individual&apos;s progress and development, feeding this information back to us.",
+      "Meeting with parents, guardians or careers to discuss their child/children&apos;s progress in the subject and determine learning priorities and any needed resources.",
+      "Must have a Post Graduation level education in the relevant subjects. ",
+      "Teaching experience of 1-2 years is a plus for this role.",
+    ],
+  },
+  {
+    id: 4,
+    role: "Chemistry Teacher(Grade 6-12)",
+    image: chemistry,
+    responsibilities: [
+      "Planning and delivering effective lessons that meet the curriculum(CBSE, ICSE, IGSCE ETC.) and are suitable for all pupils in grade 6 to 12.",
+      "Ensuring all your lessons, units, and projects are clearly understood by your pupils.",
+      "Staying current with any changes and developments to the national teaching curriculum.",
+      "Working with your colleagues to coordinate lesson plans where other subjects can complement your Mathematics lessons.",
+      "Being able to adapt your instructional materials and teaching methods to meet the classes varying learning abilities.",
+      "Creating lesson plans that deliver a balance of instruction, demonstration, and work time, so that pupils are provided with the opportunity to observe, question, and investigate.",
+      "Being creative and enthusiastic about using different teaching methods, including solo work, group work, whole-class work, demonstrations.",
+      "Attending meetings, parent&apos;s evenings.",
+      "Creating a classroom environment where pupils work together to achieve their learning goals.",
+      "Helping and supporting individual pupils as required and encouraging them to research topics themselves.",
+      "Keeping a register of pupils&apos; attendance, set assignments and homework, mark pupils work, record completion, write progress reports and carry out continuous assessment.",
+      "Taking responsibility for the individual&apos;s progress and development, feeding this information back to us.",
+      "Meeting with parents, guardians or careers to discuss their child/children&apos;s progress in the subject and determine learning priorities and any needed resources.",
+      "Must have a Post Graduation level education in the relevant subjects. ",
+      "Teaching experience of 1-2 years is a plus for this role.",
+    ],
+  },
+];
+
 export const Filters = ["Teacher Resources", "Student Resources"];
 
 export const QuizCategories = ["6", "7", "8", "9", "10", "11", "12"];
-
-// VITE_API_URL = https://social-forum-backend.vercel.app

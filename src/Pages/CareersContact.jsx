@@ -2,16 +2,12 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import SmallLoader from "../Components/SmallLoader";
 import toast from "react-hot-toast";
-import { Questions } from "../Utils/Constant";
-import Question from "../Components/Faq/Question";
+import Faq from "../Components/Careers/Faq";
+import TeacherRoles from "../Components/Careers/TeacherRoles";
 
 const CareersContact = () => {
   const form = useRef();
   const [requestLoader, setRequestLoader] = useState(false);
-  const [selectedDiv, setSelectedDiv] = useState(null);
-  const handleDivClick = (index) => {
-    setSelectedDiv(selectedDiv === index ? null : index);
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,12 +19,10 @@ const CareersContact = () => {
       })
       .then(
         (response) => {
-          // console.log('SUCCESS!', response.status, response.text);
           toast.success(`${response.text} , Form submitted successfully`);
           setRequestLoader(false);
         },
         (error) => {
-          // console.log('FAILED...', error.text);
           toast.error(error.text);
           setRequestLoader(false);
         }
@@ -84,7 +78,9 @@ const CareersContact = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span className="hover:underline font-bold">+91 7019835235</span>
+                  <span className="hover:underline font-bold">
+                    +91 7019835235
+                  </span>
                 </div>
 
                 <div className="flex items-center">
@@ -101,7 +97,9 @@ const CareersContact = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span className="hover:underline font-bold">+91 8088048571</span>
+                  <span className="hover:underline font-bold">
+                    +91 8088048571
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -117,7 +115,9 @@ const CareersContact = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span className="hover:underline font-bold">+91 8884466899</span>
+                  <span className="hover:underline font-bold">
+                    +91 8884466899
+                  </span>
                 </div>
               </div>
             </div>
@@ -199,22 +199,11 @@ const CareersContact = () => {
           </form>
         </div>
       </div>
-      <div className="max-w-3xl w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
-          Frequently Asked Questions
-        </h1>
-        <div className="space-y-6">
-          {Questions.map((item, index) => (
-            <Question
-              key={item.id}
-              isSelected={selectedDiv === index}
-              onClick={() => handleDivClick(index)}
-              question={item.question}
-              answer={item.answer}
-            />
-          ))}
-        </div>
+      <div>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Current Openings</h1>
       </div>
+      <TeacherRoles />
+      <Faq />
     </section>
   );
 };

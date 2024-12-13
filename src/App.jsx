@@ -3,8 +3,8 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 // import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
-import Faq from "./Pages/Faq";
-import Resources from "./Pages/Resources";
+// import Faq from "./Pages/Faq";
+// import Resources from "./Pages/Resources";
 // import Quiz from "./Pages/Quiz";
 import Error from "./Pages/Error";
 import Layout from "./Layout";
@@ -41,7 +41,7 @@ function App() {
         {/* <Route path="blogs/:id" element={<Blog />} /> */}
         <Route path="contact" element={<Contact />} />
         <Route path="careers" element={<CareersContact />} />
-        <Route path="faq" element={<Faq />} />
+        {/* <Route path="faq" element={<Faq />} /> */}
         <Route path="our-courses" element={<Courses />} />
         <Route path="our-courses/:id" element={<Course />} />
         {/* <Route path="gallery" element={<Gallery />} /> */}
