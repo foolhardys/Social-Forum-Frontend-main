@@ -34,7 +34,7 @@ const LongNav = () => {
       >
         <img src={logo} className="h-[50px]" alt="logo" />
       </Link>
-      <ul className="min-w-[680px] lg:flex justify-between capitalize p-2">
+      <ul className="min-w-[680px] lg:flex justify-evenly capitalize p-2">
         {NavLinks.map((navlink) => {
           const { id, text, url } = navlink;
 

@@ -2,18 +2,23 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import SmallLoader from "../Components/SmallLoader";
 import toast from "react-hot-toast";
+import { Questions } from "../Utils/Constant";
+import Question from "../Components/Faq/Question";
 
-const Contact = () => {
+const CareersContact = () => {
   const form = useRef();
   const [requestLoader, setRequestLoader] = useState(false);
+  const [selectedDiv, setSelectedDiv] = useState(null);
+  const handleDivClick = (index) => {
+    setSelectedDiv(selectedDiv === index ? null : index);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
     setRequestLoader(true);
-    console.log(form.current);
 
     emailjs
-      .sendForm("service_chhlto9", "template_hvlf9ye", form.current, {
+      .sendForm("service_chhlto9", "template_ur7fqqb", form.current, {
         publicKey: "6G3bip3AbmyowHBk9",
       })
       .then(
@@ -31,16 +36,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-purple-100 to-orange-200 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-purple-100 to-orange-200 min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-16">
       <div className="max-w-4xl w-full space-y-8 bg-white rounded-xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row">
           <div className="bg-purple-600 text-white md:w-1/2 p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-              Contact Us
+              Become A Teacher!
             </h2>
             <p className="text-lg mb-8">
-              Have questions or suggestions? Reach out to us using the form.
-              Drop an E-mail, call or message.
+              Reach out to us using the form. Drop an E-mail, call or message.
+              We will get in touch with you in the next 24 - 48 Hours.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
@@ -133,7 +138,7 @@ const Contact = () => {
                 name="name"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"
                 required
-                placeholder="Your Name"
+                placeholder="Your full Name"
               />
               <input
                 type="email"
@@ -152,6 +157,14 @@ const Contact = () => {
                 placeholder="Phone Number"
               />
               <input
+                type="text"
+                id="qualification"
+                name="qualification"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"
+                required
+                placeholder="Your highest qualification"
+              />
+              <input
                 type="number"
                 id="class"
                 name="class"
@@ -159,37 +172,16 @@ const Contact = () => {
                 max={12}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"
                 required
-                placeholder="Class"
+                placeholder="Which grade you would like to teach?"
               />
               <input
                 type="text"
-                id="board"
-                name="board"
+                id="subject"
+                name="subject"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"
                 required
-                placeholder="Board"
+                placeholder="Which subject are you interested to teach?"
               />
-              {/* <div>
-                <label
-                  htmlFor="course-preference"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  Course preference
-                </label>
-                <select
-                  name="course-preference"
-                  id="course-preference"
-                  required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600"
-                >
-                  <option value="ADLP">ADLP</option>
-                  <option value="Test Series">Test Series</option>
-                  <option value="Live interactive classes">
-                    Live interactive classes
-                  </option>
-                  <option value="General">General</option>
-                </select>
-              </div> */}
               <textarea
                 id="message"
                 required
@@ -207,8 +199,24 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+      <div className="max-w-3xl w-full">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
+          Frequently Asked Questions
+        </h1>
+        <div className="space-y-6">
+          {Questions.map((item, index) => (
+            <Question
+              key={item.id}
+              isSelected={selectedDiv === index}
+              onClick={() => handleDivClick(index)}
+              question={item.question}
+              answer={item.answer}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default Contact;
+export default CareersContact;
