@@ -20,7 +20,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="flex w-full bg-gradient-to-r from-fuchsia-300 via-purple-500 to-purple-800 md:flex-row flex-col min-h-[300px] p-4 rounded-tl-2xl rounded-tr-2xl">
+    <footer className="flex w-full bg-gradient-to-r from-violet-900 via-purple-800 to-orange-500 md:flex-row flex-col min-h-[300px] p-4 rounded-tl-2xl rounded-tr-2xl">
       <div className="text-white md:w-1/3 flex items-center justify-center flex-col">
         <img src={logo} alt="" className="h-[150px]" />
         <p className="text-orange-500 my-8 font-bold text-[24px] text-center">

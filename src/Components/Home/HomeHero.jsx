@@ -3,7 +3,7 @@ import image from "../../assets/Illustrations/E-teaching.png";
 
 const HomeHero = () => {
   return (
-    <section className="flex md:flex-row flex-col max-w-[1080px] p-4 gap-4">
+    <section className="flex md:flex-row flex-col max-w-[1080px] p-4 md:gap-4 gap-16 mb-16">
       <div className="md:w-3/5">
         <h1 className="text-purple-950 font-serif lg:text-[60px] md:text-[40px] text-[45px] font-bold leading-tight my-10">
           <span className="text-orange-500">Enhance</span> the <br />{" "}
