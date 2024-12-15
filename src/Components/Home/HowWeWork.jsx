@@ -23,7 +23,7 @@ const HowWeWork = () => {
           return (
             <li
               key={id}
-              className="lg:text-[20px] md:text-[18px] text-[20px] font-medium mb-2 flex gap-4 justify-start items-center"
+              className="lg:text-[20px] md:text-[18px] text-[20px] font-medium mb-2"
             >
               <FaCheckCircle className="text-orange-600 text-3xl inline" />{" "}
               {title}

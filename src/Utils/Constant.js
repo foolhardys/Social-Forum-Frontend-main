@@ -3,6 +3,9 @@ import maths from "../assets/Illustrations/Maths.png";
 import science from "../assets/Illustrations/Science.png";
 import physics from "../assets/Illustrations/Physics.png";
 import chemistry from "../assets/Illustrations/Chemistry.png";
+import bolt from "../assets/Png/bolt.png";
+import barchart from "../assets/Png/barchart.png";
+import mission from "../assets/Png/mission.png";
 
 export const NavLinks = [
   {
@@ -259,6 +262,53 @@ export const TeacherData = [
       "Must have a Post Graduation level education in the relevant subjects. ",
       "Teaching experience of 1-2 years is a plus for this role.",
     ],
+  },
+];
+
+export const AboutArticleData = [
+  {
+    id: 1,
+    title: "Our Mission",
+    content:
+      "To employ our unique teaching methodology that helps students deepen their knowledge and skills to appreciate, and find their love of learning.  also encourage them to apply their learnings in a way that will help them build their future.",
+    img: mission,
+  },
+  {
+    id: 2,
+    title: "Our Vision",
+    content:
+      "To be recognized as a premier learning academy in bridging learning gaps in students and self-assess one’s potential for skill and knowledge thus ensuring trustworthiness in whatever we impart.",
+    img: bolt,
+  },
+  {
+    id: 3,
+    title: "Our Goal",
+    content:
+      "Ensure that students enjoy the process of learning and promote self learning. Bringing perfection in their learning ability with special focus to deepen their knowledge and develop their skills.Practical application of knowledge to shape future. ",
+    img: barchart,
+  },
+];
+
+export const WhatWeDo = [
+  {
+    id: 1,
+    title: "Focus on the need of every child",
+  },
+  {
+    id: 2,
+    title: "Live Interactive Customized Online Sessions",
+  },
+  {
+    id: 3,
+    title: "Identify and bridge Learning Gaps",
+  },
+  {
+    id: 4,
+    title: "Doubt clarification classes to facilitate self learning",
+  },
+  {
+    id: 5,
+    title: "Tests at Regular intervals to improve perfection",
   },
 ];
 
