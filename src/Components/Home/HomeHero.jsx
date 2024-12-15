@@ -20,7 +20,7 @@ const HomeHero = () => {
           to="/contact"
           className="bg-orange-500 rounded-full shadow-md p-4 text-lg text-white font-bold hover:bg-orange-400 transition md:my-0 my-4"
         >
-          Explore Resources
+          Contact Us Now
         </Link>
       </div>
       <div className="md:w-2/5 flex items-center justify-center">

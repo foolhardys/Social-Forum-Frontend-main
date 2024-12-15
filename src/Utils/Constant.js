@@ -6,6 +6,8 @@ import chemistry from "../assets/Illustrations/Chemistry.png";
 import bolt from "../assets/Png/bolt.png";
 import barchart from "../assets/Png/barchart.png";
 import mission from "../assets/Png/mission.png";
+import user from "../assets/Png/user.png";
+
 
 export const NavLinks = [
   {
@@ -309,6 +311,51 @@ export const WhatWeDo = [
   {
     id: 5,
     title: "Tests at Regular intervals to improve perfection",
+  },
+];
+
+export const Testimonials = [
+  {
+    id: 1,
+    name: "John Doe",
+    feedback:
+      "This platform has transformed my learning experience. The interactive sessions make learning fun and engaging!",
+    image: user,
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    feedback:
+      "The tailored approach to teaching has helped me bridge my knowledge gaps effectively. Highly recommend!",
+    image: user,
+  },
+  {
+    id: 3,
+    name: "Alice Johnson",
+    feedback:
+      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+    image: user,
+  },
+  {
+    id: 4,
+    name: "Alice Johnson",
+    feedback:
+      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+    image: user,
+  },
+  {
+    id: 5,
+    name: "Alice Johnson",
+    feedback:
+      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+    image: user,
+  },
+  {
+    id: 6,
+    name: "Alice Johnson",
+    feedback:
+      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+    image: user,
   },
 ];
 
