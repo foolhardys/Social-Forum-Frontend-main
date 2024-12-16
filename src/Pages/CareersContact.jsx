@@ -30,7 +30,7 @@ const CareersContact = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-purple-100 to-orange-200 min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-16">
+    <section className="bg-gradient-to-br from-purple-300 to-orange-200 min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8 gap-16">
       <div className="max-w-4xl w-full space-y-8 bg-white rounded-xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row">
           <div className="bg-purple-600 text-white md:w-1/2 p-8 md:p-12">
@@ -200,7 +200,9 @@ const CareersContact = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Current Openings</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">
+          Current Openings
+        </h1>
       </div>
       <TeacherRoles />
       <Faq />

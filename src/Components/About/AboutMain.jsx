@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const AboutMain = () => {
   return (
-    <section className="flex md:flex-row flex-col max-w-[1080px] p-4 md:gap-4 gap-16 mb-16">
+    <section className="flex md:flex-row flex-col max-w-[1080px] p-4 md:gap-4 gap-16">
       <div className="w-full mt-8 rounded-lg flex items-center justify-center flex-col p-5">
         <h1 className="text-orange-500 text-center font-serif lg:text-[50px] md:text-[45px] text-[45px] font-bold leading-tight my-4">
           Promote self-learning, Reshape education <br />{" "}

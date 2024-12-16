@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Pagination, EffectCards, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,30 +13,36 @@ const AboutSlider = () => {
       </h1>
       <Swiper
         pagination={true}
-        modules={[Pagination]}
+        modules={[Pagination, EffectCards, Autoplay]}
+        effect={'cards'}
         spaceBetween={20}
-        slidesPerView={2}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className="w-full flex justify-center"
+        loop={true}
+        slidesPerView={1}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        // onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        className="w-full flex p-4"
       >
         {Testimonials.map((testimonial, index) => {
           return (
             <SwiperSlide
               key={index}
-              className="flex justify-center flex-col bg-slate-100 p-4 rounded-xl shadow-xl md:items-start items-center hover:scale-105 transition"
+              className="flex flex-col bg-slate-100 p-6 rounded-xl items-center h-72 justify-between shadow-md"
             >
-              <img
-                className="h-[50px] w-[50px] rounded-full shadow-sm border-2"
-                src={testimonial?.image}
-                alt={testimonial?.name}
-              />
-              <h1 className="font-semibold text-gray-900 text-[22px] md:text-left text-center">
-                {testimonial?.name}
-              </h1>
-              <p className="font-normal text-gray-800 text-[14px] md:text-left text-center">
+              <p className="font-normal text-gray-800 text-[14px] text-center text-ellipsis">
                 {testimonial?.feedback}
               </p>
+              <div className="flex flex-col items-center">
+                <h1 className="font-bold text-gray-900 text-[22px] md:text-left text-center">
+                  {testimonial?.name}
+                </h1>
+                <h2 className="font-normal text-purple-900 text-[14px] md:text-left text-center">
+                  {testimonial?.title}
+                </h2>
+              </div>
             </SwiperSlide>
           );
         })}

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Courses = () => {
   return (
-    <div>Courses</div>
-  )
-}
+    <section className="min-h-screen flex items-center flex-col bg-gradient-to-br from-purple-300 to-orange-200">
+      Courses
+    </section>
+  );
+};
 
-export default Courses
+export default Courses;

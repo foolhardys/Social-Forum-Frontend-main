@@ -1,5 +1,10 @@
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import maths from "../assets/Illustrations/Maths.png";
+import heart from "../assets/Png/heart.png";
+import hat from "../assets/Png/hat.png";
+import Board from "../assets/Png/Board.png";
+import book from "../assets/Png/book.png";
+import globe from "../assets/Png/globe.png";
 import science from "../assets/Illustrations/Science.png";
 import physics from "../assets/Illustrations/Physics.png";
 import chemistry from "../assets/Illustrations/Chemistry.png";
@@ -7,7 +12,6 @@ import bolt from "../assets/Png/bolt.png";
 import barchart from "../assets/Png/barchart.png";
 import mission from "../assets/Png/mission.png";
 import user from "../assets/Png/user.png";
-
 
 export const NavLinks = [
   {
@@ -291,6 +295,51 @@ export const AboutArticleData = [
   },
 ];
 
+export const AboutStrengthsData = [
+  {
+    id: 1,
+    title: "Extremely Passionate Team",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: heart,
+  },
+  {
+    id: 2,
+    title: "Highly Educated Teachers",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: hat,
+  },
+  {
+    id: 3,
+    title: "Widely Experienced Faculty",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: globe,
+  },
+  {
+    id: 4,
+    title: "Unique Teaching Methodology",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: Board,
+  },
+  {
+    id: 5,
+    title: "Personalized Attention on Students",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: mission,
+  },
+  {
+    id: 6,
+    title: "Promote Self Learning",
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde distinctio hic odio odit inventore saepe tempora delectus vel itaque est? Odio, quidem? Tenetur beatae molestiae, sequi quam distinctio facere aspernatur!l",
+    img: book,
+  },
+];
+
 export const WhatWeDo = [
   {
     id: 1,
@@ -317,44 +366,58 @@ export const WhatWeDo = [
 export const Testimonials = [
   {
     id: 1,
-    name: "John Doe",
+    name: "Bhavya Dhanraj",
+    title: "Mother of Aditya Dhanraj(2019-2022)",
     feedback:
-      "This platform has transformed my learning experience. The interactive sessions make learning fun and engaging!",
+      "Drona Learning Academy is highly valued. I thank the team of Drona Academy for understanding and providing the right support for my son. They have exceptionally good teachers, each one of them that we (my son and I) have interacted with have a great impact. Wishing you many more success for another academic year ahead looking forward to collaborating with you again.",
     image: user,
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "Ranjana R Kamath",
+    title: "2019",
     feedback:
-      "The tailored approach to teaching has helped me bridge my knowledge gaps effectively. Highly recommend!",
+      "Mathematics being one of the most important subjects, it is especially important to have a solid base especially in grade XI and XII. Having not attended tuitions before, I was a little apprehensive while joining the mathematics classes in Drona as the portion taught in school and these classes may lead to confusion. This perception of mine changed after I joined Jayanti ma,am's classes. She is a teacher every student must have and I feel very privileged to get her guidance. I was also privileged to have the guidance and physics from Aditi Dutta ma,am and chemistry from Neetu ma,am. Their extraordinary approach relate concepts not only helped me understand each topic clearly, but also assisted me to effectively applying the concepts in answering the questions. Regular worksheets for self-practise helped realise the mistake I made and each error that I made was discussed and remediated. This self realisation has helped me improve my approach to learning and score exceptionally good marks in grade XII.",
     image: user,
   },
   {
     id: 3,
-    name: "Alice Johnson",
+    name: "Farooq",
+    title: "Father of Danish(2018-2019)",
     feedback:
-      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+      "Drova learning has been a step forward in E learning.It does away with the hassels of travelling to the place of tuition and bundled with many other students.In Drona ,the one-to-one learning is great as it focuses on one student alone. The faculty is well educated and the administrator Dr. Abhilasha is co-operative and empathetic in her dealing. I have found it to be a wonderful way of learning and recommend it to all the parents who are seeking additional classes for learning and doubt clarification of their wards. My son benefited from it immensely in grade XII wish you all the best.",
     image: user,
   },
   {
     id: 4,
-    name: "Alice Johnson",
+    name: "Bhadra",
+    title: "2018-2021",
     feedback:
-      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+      "I'd like to thank Jayanti Mam from the bottom of my heart for making mathematics so very interesting and exciting to study. These three years studying maths was an incredibly unique learning process for me personally, I learnt how to study. Recently I was listening to an audio book which talks about how to retain knowledge and I realised all along with taught me to study that way. The main message of the book is to recall and enforce information into your memory .And you helped me learn this technique practically.Thank you for making me fall in love with this subject again.",
     image: user,
   },
   {
     id: 5,
-    name: "Alice Johnson",
+    name: "Amit Naik",
+    title: "Father of Aanya Naik(2017-2018)",
     feedback:
-      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+      "Hi, our overall experience with Drona Learning Academy for online learning has been awesome and knowledgeable which helped our daughter studying in class 7th. She got to learn a lot new techniques and tips to enhance her learning capabilities and experience. I would say it is one of the best platforms as it has many features which are out of the box,like live interaction or topic of various subjects, which in my opinion is the best feature as it helps students to learn by visualisation. The platform also helps teachers to prepare lesson plans very accurately by focusing on key points of the topic as desired by the student and adding extra efforts to enrich the interactions.",
     image: user,
   },
   {
     id: 6,
-    name: "Alice Johnson",
+    name: "Shashwat",
+    title: "2018-2021",
     feedback:
-      "I love the regular tests and doubt clarification classes. They have greatly improved my confidence and understanding.",
+      "The best for building your basic concepts. When I joined Drona Learning Academy in grade X in the year 2018 I had no idea what to expect from the online classes.However with the help of Jayanti Dutta mam and her team I was guided step by step for my preparation. They are the best concept builders and their way of teaching leaves no space for doubt.Questions are always encouraged and answered.If you want to have a good grasp on subjects then Drona Learning academy is the best.",
+    image: user,
+  },
+  {
+    id: 7,
+    name: "Nandana U Nair",
+    title: "2018-2021",
+    feedback:
+      "Excellent!! Excellent!! Excellent!! This is what comes to my mind when I think about Drona. I attended the mathematics and chemistry sessions for a grade X and biology sessions for grade XII in Drona. I had high degree of maths phobia till Jayanti Mam started teaching me maths, now I have the courage to pursue math for my higher studies. She not only teaches maths but also removes the fear in the students mind making them self confident .I had conceptual misunderstandings which were cleared by Jayanti Mam which in turn held to score incredibly good marks.Many students find chemistry a dry subject.But the teaching techniques Abhilasha Mam and Neetu Mam makes one enjoy learning chemistry. Her methodology to connect the subject to the real life situations helped me immensely to grasp the subject very easily.Also the manner with which Abhilasha Mam explained the topics in biology in grade XII was amazing. They are very professional, highly knowledgeable ,moreover they are very sincere. I thank the teachers-Jayanti mam. Abhilasha mam , Neetu Mam and the entire drona team for the support extended to me. Dear students you can join Drona without a second thought.You are safe in their hands",
     image: user,
   },
 ];
