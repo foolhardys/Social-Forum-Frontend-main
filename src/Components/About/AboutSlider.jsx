@@ -30,7 +30,7 @@ const AboutSlider = () => {
           return (
             <SwiperSlide
               key={index}
-              className="flex flex-col bg-slate-100 p-6 rounded-xl items-center h-72 justify-between shadow-md"
+              className="flex flex-col bg-slate-100 p-6 rounded-xl items-center h-auto justify-between shadow-md"
             >
               <p className="font-normal text-gray-800 text-[14px] text-center text-ellipsis">
                 {testimonial?.feedback}
